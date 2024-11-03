@@ -4,6 +4,7 @@ import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.PATCH
 import retrofit2.http.POST
+import retrofit2.http.Path
 import tn.esprit.cleanarchitectureapp.data.remote.dto.NoteDto
 
 interface NoteApiService {
@@ -16,7 +17,7 @@ interface NoteApiService {
     suspend fun getNotes(): List<NoteDto>
 
     @GET("notes/{id}")
-    suspend fun getNoteById(id: Int): NoteDto
+    suspend fun getNoteById(@Path("id") id: Int): NoteDto
 
     @POST("notes")
     suspend fun addNote(note: NoteDto)

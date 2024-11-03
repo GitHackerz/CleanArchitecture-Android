@@ -1,4 +1,4 @@
-package tn.esprit.cleanarchitectureapp.presentation.notes_list
+package tn.esprit.cleanarchitectureapp.presentation.notes
 
 import tn.esprit.cleanarchitectureapp.domain.model.Note
 

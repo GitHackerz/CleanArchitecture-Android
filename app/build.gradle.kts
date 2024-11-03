@@ -1,5 +1,3 @@
-import org.gradle.kotlin.dsl.test
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -83,6 +81,8 @@ dependencies {
 
     // System ui controller
     implementation ("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
+
+    implementation ("androidx.navigation:navigation-compose:2.5.3")
 
 
 }
